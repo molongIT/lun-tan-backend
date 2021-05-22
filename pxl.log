@@ -1,0 +1,30 @@
+2020-11-22 11:44:21.068  INFO 27272 --- [main] com.pxl.Application                      : Starting Application on DESKTOP-20BFKT8 with PID 27272 (D:\´úÂë\MyTemplate\target\classes started by åÌÏþÁú in D:\´úÂë\MyTemplate)
+2020-11-22 11:44:21.073  INFO 27272 --- [main] com.pxl.Application                      : No active profile set, falling back to default profiles: default
+2020-11-22 11:44:22.408  INFO 27272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-22 11:44:22.426  INFO 27272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-22 11:44:22.427  INFO 27272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-22 11:44:22.637  INFO 27272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-22 11:44:22.637  INFO 27272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1486 ms
+2020-11-22 11:44:22.850  INFO 27272 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 11:44:23.085  INFO 27272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 11:44:23.097  INFO 27272 --- [main] com.pxl.Application                      : Started Application in 2.724 seconds (JVM running for 4.077)
+2020-11-22 11:47:11.273  INFO 26204 --- [main] com.pxl.Application                      : Starting Application on DESKTOP-20BFKT8 with PID 26204 (D:\´úÂë\MyTemplate\target\classes started by åÌÏþÁú in D:\´úÂë\MyTemplate)
+2020-11-22 11:47:11.276  INFO 26204 --- [main] com.pxl.Application                      : No active profile set, falling back to default profiles: default
+2020-11-22 11:47:12.405  INFO 26204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-22 11:47:12.418  INFO 26204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-22 11:47:12.418  INFO 26204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-22 11:47:12.617  INFO 26204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-22 11:47:12.617  INFO 26204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1276 ms
+2020-11-22 11:47:12.935  INFO 26204 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 11:47:13.162  INFO 26204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 11:47:13.174  INFO 26204 --- [main] com.pxl.Application                      : Started Application in 2.52 seconds (JVM running for 4.669)
+2020-11-22 11:48:08.293  INFO 31768 --- [main] com.pxl.Application                      : Starting Application on DESKTOP-20BFKT8 with PID 31768 (D:\´úÂë\MyTemplate\target\classes started by åÌÏþÁú in D:\´úÂë\MyTemplate)
+2020-11-22 11:48:08.299  INFO 31768 --- [main] com.pxl.Application                      : No active profile set, falling back to default profiles: default
+2020-11-22 11:48:09.656  INFO 31768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-22 11:48:09.668  INFO 31768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-22 11:48:09.668  INFO 31768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-22 11:48:09.820  INFO 31768 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-22 11:48:09.821  INFO 31768 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1437 ms
+2020-11-22 11:48:10.216  INFO 31768 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 11:48:10.585  INFO 31768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 11:48:10.598  INFO 31768 --- [main] com.pxl.Application                      : Started Application in 3.029 seconds (JVM running for 4.388)

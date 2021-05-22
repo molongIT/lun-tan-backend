@@ -5,7 +5,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pxl.common.annotation.Log;
 import com.pxl.common.utils.RequestUtil;
-import com.pxl.entity.Systemlog;
+import com.pxl.entity.DTO.Systemlog;
 import com.pxl.service.LogService;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.JoinPoint;

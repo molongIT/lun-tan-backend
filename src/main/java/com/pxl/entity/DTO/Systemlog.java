@@ -1,4 +1,4 @@
-package com.pxl.entity;
+package com.pxl.entity.DTO;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

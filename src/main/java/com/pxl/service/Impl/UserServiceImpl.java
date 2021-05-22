@@ -1,7 +1,7 @@
 package com.pxl.service.Impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.pxl.entity.AdminUser;
+import com.pxl.entity.PO.AdminUser;
 import com.pxl.mapper.UserMapper;
 import com.pxl.service.UserService;
 import lombok.RequiredArgsConstructor;

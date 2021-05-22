@@ -1,9 +1,7 @@
 package com.pxl.service;
 
-import com.pxl.entity.Systemlog;
-import com.pxl.mapper.LogMapper;
+import com.pxl.entity.DTO.Systemlog;
 
-import java.security.PrivateKey;
 import java.util.List;
 
 public interface LogService {

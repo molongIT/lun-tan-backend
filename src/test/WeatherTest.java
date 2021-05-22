@@ -1,4 +1,4 @@
-package com.pxl;
+package test;
 
 
 import com.pxl.common.utils.HttpUtils;

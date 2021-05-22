@@ -1,4 +1,4 @@
-package com.pxl;
+package test;
 
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;

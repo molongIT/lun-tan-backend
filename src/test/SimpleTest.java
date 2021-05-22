@@ -1,4 +1,4 @@
-package com.pxl;
+package test;
 
 import java.io.*;
 import java.net.HttpURLConnection;

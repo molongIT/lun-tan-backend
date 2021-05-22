@@ -1,6 +1,6 @@
 package com.pxl.service.Impl;
 
-import com.pxl.entity.PO.Article;
+import com.pxl.entity.Article;
 import com.pxl.mapper.ArticleMapper;
 import com.pxl.service.ArticleService;
 import lombok.RequiredArgsConstructor;

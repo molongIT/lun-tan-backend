@@ -1,6 +1,6 @@
 package com.pxl.controller;
 import com.pxl.common.annotation.AnonymousAccess;
-import com.pxl.entity.PO.Article;
+import com.pxl.entity.Article;
 import com.pxl.service.ArticleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -25,5 +25,4 @@ public class ArticleController {
     public List<Article> getAll(){
         return articleService.findAll();
     }
-
 }

@@ -1,7 +1,10 @@
-package com.pxl;
+package test;
 
-import com.pxl.entity.DTO.Systemlog;
+import com.pxl.entity.Systemlog;
 import com.pxl.mapper.LogMapper;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

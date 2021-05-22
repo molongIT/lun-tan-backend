@@ -1,7 +1,7 @@
 package com.pxl.entity.DTO;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.pxl.entity.PO.AdminUser;
+import com.pxl.entity.AdminUser;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;

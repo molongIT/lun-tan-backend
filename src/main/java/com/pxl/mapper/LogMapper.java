@@ -1,7 +1,8 @@
 package com.pxl.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.pxl.entity.DTO.Systemlog;
+import com.pxl.entity.Systemlog;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 

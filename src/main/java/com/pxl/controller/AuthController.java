@@ -26,7 +26,6 @@ public class AuthController {
     private final OnlineUserService onlineUserService;
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
 
-    @CrossOrigin
     @PostMapping
     public Map<String, Object> login(@RequestBody AdminUserDto user, HttpServletRequest request){
         // 生成一个UsernamePasswordAuthenticationToken

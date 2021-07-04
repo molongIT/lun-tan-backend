@@ -70,7 +70,6 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
      */
     private String resolveToken(HttpServletRequest request) {
         String bearerToken = request.getHeader(properties.getHeader());
-        bearerToken = bearerToken.substring(1, bearerToken.length() - 1);
         if (StringUtils.hasText(bearerToken) && bearerToken.startsWith("Bearer")) {
             // 去掉令牌前缀
             return bearerToken.replace(properties.getTokenStartWith(), "");

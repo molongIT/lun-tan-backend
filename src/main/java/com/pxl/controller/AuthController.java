@@ -1,4 +1,5 @@
 package com.pxl.controller;
+import com.pxl.common.ResultWrapper;
 import com.pxl.common.security.Jwt.JwtTokenUtils;
 import com.pxl.common.security.OnlineUserService;
 import com.pxl.entity.DTO.AdminUserDto;
@@ -9,8 +10,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -51,5 +50,13 @@ public class AuthController {
         };
         System.out.println("----------------" + authInfo);
         return authInfo;
+    }
+
+    @DeleteMapping("/logout")
+    public ResultWrapper logout(HttpServletRequest request){
+        // 剔除token
+        String token = request.getHeader("Authorization").replace("Bearer ","");
+        onlineUserService.logout(token);
+        return ResultWrapper.success(null);
     }
 }

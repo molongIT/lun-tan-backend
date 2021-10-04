@@ -1,4 +1,4 @@
-package test;
+package com;
 
 import com.alibaba.fastjson.JSONObject;
 import com.aliyuncs.CommonRequest;

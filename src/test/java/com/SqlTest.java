@@ -1,4 +1,4 @@
-package test;
+package com;
 
 import com.pxl.entity.Systemlog;
 import com.pxl.mapper.LogMapper;
@@ -19,18 +19,7 @@ import java.util.Date;
 public class SqlTest {
 
 
-    @Autowired
-    LogMapper logMapper;
-
-
     @Test
     public void logInsertTest(){
-        Systemlog systemlog = new Systemlog();
-        systemlog.setId(2416628L);
-        systemlog.setIp("127.0.0.1");
-        systemlog.setOptime(new Date());
-        systemlog.setParams("test");
-        systemlog.setFunc("c22");
-        logMapper.insert(systemlog);
     }
 }

@@ -16,7 +16,6 @@ public class LogTest {
 
     @Test
     public void contextLoad(){
-        System.out.println(ResultCodeEnum.ResultEnum.ERROR_UNKNOWN_EXCEPTION.getValue());
 
     }
 }

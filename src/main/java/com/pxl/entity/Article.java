@@ -8,7 +8,7 @@ import java.io.Serializable;
 @Data
 public class Article implements Serializable {
 
-    @TableId(type = IdType.INPUT)
+    @TableId(type = IdType.ASSIGN_ID)
     private String id;
     private String articleImg;
     private String articleAuthor;

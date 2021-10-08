@@ -1,5 +1,6 @@
 package com.pxl.service.Impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pxl.entity.Article;
 import com.pxl.mapper.ArticleMapper;
 import com.pxl.service.ArticleService;
@@ -12,7 +13,7 @@ import java.util.List;
 @CrossOrigin
 @Service
 @RequiredArgsConstructor
-public class ArticleServiceImpl implements ArticleService {
+public class ArticleServiceImpl extends ServiceImpl<ArticleMapper,Article> implements ArticleService {
 
     private final ArticleMapper articleMapper;
 

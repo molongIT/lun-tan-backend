@@ -12,7 +12,8 @@ public class Article implements Serializable {
     private String id;
     private String articleImg;
     private String articleAuthor;
-    private String articleWord;
+    private String articleDescription;
+    private String articleUrl;
     private String articleTitle;
     private String createTime;
 

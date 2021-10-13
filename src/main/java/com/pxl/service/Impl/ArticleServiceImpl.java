@@ -1,5 +1,6 @@
 package com.pxl.service.Impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pxl.entity.Article;
 import com.pxl.mapper.ArticleMapper;
@@ -19,7 +20,10 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper,Article> imple
 
     @Override
     public List<Article> findAll() {
-        return articleMapper.selectList(null);
+        // 默认根据创建时间降序
+        LambdaQueryWrapper<Article> wrapper = new LambdaQueryWrapper<>();
+        wrapper.orderByDesc(Article::getCreateTime);
+        return articleMapper.selectList(wrapper);
     }
 
 }

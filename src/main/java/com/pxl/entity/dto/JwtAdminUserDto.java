@@ -1,4 +1,4 @@
-package com.pxl.entity.DTO;
+package com.pxl.entity.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.pxl.entity.AdminUser;

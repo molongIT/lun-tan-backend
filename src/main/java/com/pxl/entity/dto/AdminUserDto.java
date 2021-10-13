@@ -1,4 +1,4 @@
-package com.pxl.entity.DTO;
+package com.pxl.entity.dto;
 
 import com.sun.istack.internal.NotNull;
 import io.swagger.annotations.ApiModel;

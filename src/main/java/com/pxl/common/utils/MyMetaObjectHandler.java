@@ -1,5 +1,6 @@
 package com.pxl.common.utils;
 
+import cn.hutool.core.date.DateUtil;
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.stereotype.Component;
@@ -16,12 +17,12 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {
         //属性名称，不是字段名称
-        this.setFieldValByName("createDate", new Date(), metaObject);
+        this.setFieldValByName("createTime", DateUtil.date().toLocaleString(), metaObject);
     }
 
     //使用mp实现修改操作，这个方法会执行。
     @Override
     public void updateFill(MetaObject metaObject) {
-        this.setFieldValByName("updateDate", new Date(), metaObject);
+        this.setFieldValByName("updateTime", DateUtil.date().toLocaleString(), metaObject);
     }
 }

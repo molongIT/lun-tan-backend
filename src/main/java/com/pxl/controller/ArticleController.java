@@ -5,6 +5,7 @@ import com.pxl.common.annotation.AnonymousAccess;
 import com.pxl.entity.Article;
 import com.pxl.service.ArticleService;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,8 +29,16 @@ public class ArticleController {
     }
 
     @PostMapping
-    @PreAuthorize("hasAnyAuthority('root','admin')")
+    // @PreAuthorize("hasAnyAuthority('root','admin')")
+    @AnonymousAccess
     public ResultWrapper add(@RequestBody Article article) {
+        System.out.println(article);
+        if (StringUtils.isEmpty(article.getArticleImg())){
+            article.setArticleImg("https://cdn.yocoto.cn/FnFUiMqi9FA_cPH-NcYoRnljP9pK");
+        }
+        if(StringUtils.isEmpty(article.getArticleAuthor())){
+            article.setArticleAuthor("陌生人");
+        }
         articleService.save(article);
         return ResultWrapper.success();
     }

@@ -1,5 +1,7 @@
 package com;
 
+import cn.hutool.core.date.DateUtil;
+
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -87,14 +89,7 @@ public class SimpleTest {
     }
 
     public static void main(String[] args) {
-       /* *//**
-         *手机信息查询接口：http://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel=手机号
-         　　　　 *　　　　　　http://api.showji.com/Locating/www.showji.com.aspx?m=手机号&output=json&callback=querycallback
-         *//*
-        doPostOrGet("https://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel=18866xxxxxx", "");*/
-        String token = "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJyb290IiwianRpIjoiMzViYWUwOTFhYjQ5NGIzN2I5YjhmODA5OWIxMThmYjgifQ.Vhcbe_abJZMP4guia7YCzcYRUl55DTThWyhjOetgAdA1w9_1U_mB-saPJ45bwgslCujL_r0nz9-Hxh4OxJNEmw";
-        System.out.println(token);
-        System.out.println(token.startsWith("Bearer"));
+        System.out.println(DateUtil.date().toLocaleString());
     }
 
 }

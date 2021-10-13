@@ -3,7 +3,7 @@ package com.pxl.common.security;
 import com.pxl.common.exception.BadRequestException;
 import com.pxl.common.exception.EntityNotFoundException;
 import com.pxl.entity.AdminUser;
-import com.pxl.entity.DTO.JwtAdminUserDto;
+import com.pxl.entity.dto.JwtAdminUserDto;
 import com.pxl.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Primary;

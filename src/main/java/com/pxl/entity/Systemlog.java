@@ -2,12 +2,8 @@ package com.pxl.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.pxl.entity.DTO.BaseDTO;
-import com.sun.org.apache.xalan.internal.xsltc.trax.DOM2TO;
+import com.pxl.entity.dto.BaseDTO;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
 import java.util.Date;
 

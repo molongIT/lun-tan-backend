@@ -1,0 +1,371 @@
+2021-10-13 12:51:37,128 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article 
+2021-10-13 12:51:37,133 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 12:51:37,151 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 7
+2021-10-13 12:53:47,430 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article 
+2021-10-13 12:53:47,446 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 12:53:47,466 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 7
+2021-10-13 12:53:53,304 DEBUG [http-nio-8006-exec-2] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article 
+2021-10-13 12:53:53,306 DEBUG [http-nio-8006-exec-2] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 12:53:53,316 DEBUG [http-nio-8006-exec-2] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 7
+2021-10-13 12:53:57,724 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article 
+2021-10-13 12:53:57,730 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 12:53:57,748 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 7
+2021-10-13 12:55:37,660 DEBUG [http-nio-8006-exec-2] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_title ) VALUES ( ?, ? ) 
+2021-10-13 12:55:37,661 DEBUG [http-nio-8006-exec-2] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448150409661542402(String), (String)
+2021-10-13 12:55:37,666 DEBUG [http-nio-8006-exec-2] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 12:55:46,720 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article 
+2021-10-13 12:55:46,723 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 12:55:46,742 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 8
+2021-10-13 12:55:54,051 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article 
+2021-10-13 12:55:54,054 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 12:55:54,063 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 8
+2021-10-13 13:00:36,407 DEBUG [http-nio-8006-exec-1] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_title ) VALUES ( ?, ? ) 
+2021-10-13 13:00:36,423 DEBUG [http-nio-8006-exec-1] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448151662357536769(String), (String)
+2021-10-13 13:00:36,426 DEBUG [http-nio-8006-exec-1] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:00:37,566 DEBUG [http-nio-8006-exec-2] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_title ) VALUES ( ?, ? ) 
+2021-10-13 13:00:37,571 DEBUG [http-nio-8006-exec-2] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448151667583639554(String), (String)
+2021-10-13 13:00:37,574 DEBUG [http-nio-8006-exec-2] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:03:46,607 DEBUG [http-nio-8006-exec-4] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_description, article_title ) VALUES ( ?, ?, ? ) 
+2021-10-13 13:03:46,613 DEBUG [http-nio-8006-exec-4] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448152460357427202(String), (String), (String)
+2021-10-13 13:03:46,617 DEBUG [http-nio-8006-exec-4] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:08:07,429 DEBUG [http-nio-8006-exec-6] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_description, article_title ) VALUES ( ?, ?, ? ) 
+2021-10-13 13:08:07,432 DEBUG [http-nio-8006-exec-6] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448153554399682562(String), 22(String), (String)
+2021-10-13 13:08:07,435 DEBUG [http-nio-8006-exec-6] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:08:47,647 DEBUG [http-nio-8006-exec-7] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_description, article_title ) VALUES ( ?, ?, ? ) 
+2021-10-13 13:08:47,655 DEBUG [http-nio-8006-exec-7] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448153723132338178(String), 22(String), (String)
+2021-10-13 13:08:47,659 DEBUG [http-nio-8006-exec-7] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:09:12,686 DEBUG [http-nio-8006-exec-8] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_description, article_title ) VALUES ( ?, ?, ? ) 
+2021-10-13 13:09:12,690 DEBUG [http-nio-8006-exec-8] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448153828153516033(String), 22(String), 2222(String)
+2021-10-13 13:09:12,693 DEBUG [http-nio-8006-exec-8] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:18:54,296 DEBUG [http-nio-8006-exec-1] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_img, article_author, article_description, article_title, create_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2021-10-13 13:18:54,311 DEBUG [http-nio-8006-exec-1] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448156267212603394(String), https://cdn.yocoto.cn/FnFUiMqi9FA_cPH-NcYoRnljP9pK(String), 陌生人(String), 222(String), 222(String), 2021-10-13 13:18:54(String)
+2021-10-13 13:18:54,316 DEBUG [http-nio-8006-exec-1] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:19:19,284 DEBUG [http-nio-8006-exec-2] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article 
+2021-10-13 13:19:19,287 DEBUG [http-nio-8006-exec-2] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:19:19,316 DEBUG [http-nio-8006-exec-2] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 15
+2021-10-13 13:23:48,596 DEBUG [http-nio-8006-exec-4] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_img, article_author, article_description, article_title, create_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2021-10-13 13:23:48,598 DEBUG [http-nio-8006-exec-4] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448157501889871874(String), https://cdn.yocoto.cn/FnFUiMqi9FA_cPH-NcYoRnljP9pK(String), 陌生人(String), (String), (String), 2021-10-13 13:23:48(String)
+2021-10-13 13:23:48,602 DEBUG [http-nio-8006-exec-4] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:23:49,725 DEBUG [http-nio-8006-exec-5] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article 
+2021-10-13 13:23:49,727 DEBUG [http-nio-8006-exec-5] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:23:49,752 DEBUG [http-nio-8006-exec-5] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 16
+2021-10-13 13:23:56,466 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article 
+2021-10-13 13:23:56,467 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:23:56,482 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 16
+2021-10-13 13:26:02,204 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:26:02,221 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:26:02,241 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 16
+2021-10-13 13:29:32,474 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:29:32,477 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:29:32,488 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 16
+2021-10-13 13:29:44,301 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:29:44,306 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:29:44,317 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 16
+2021-10-13 13:29:47,173 DEBUG [http-nio-8006-exec-5] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:29:47,175 DEBUG [http-nio-8006-exec-5] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:29:47,194 DEBUG [http-nio-8006-exec-5] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 16
+2021-10-13 13:30:30,913 DEBUG [http-nio-8006-exec-6] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_img, article_author, article_description, article_title, create_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2021-10-13 13:30:30,914 DEBUG [http-nio-8006-exec-6] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448159189409394689(String), https://cdn.yocoto.cn/FnFUiMqi9FA_cPH-NcYoRnljP9pK(String), 陌生人(String), ## sss
+# 身体很重要(String), 2222(String), 2021-10-13 13:30:30(String)
+2021-10-13 13:30:30,919 DEBUG [http-nio-8006-exec-6] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:30:31,801 DEBUG [http-nio-8006-exec-7] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:30:31,803 DEBUG [http-nio-8006-exec-7] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:30:31,813 DEBUG [http-nio-8006-exec-7] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 17
+2021-10-13 13:40:21,731 DEBUG [http-nio-8006-exec-9] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:40:21,732 DEBUG [http-nio-8006-exec-9] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:40:21,747 DEBUG [http-nio-8006-exec-9] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 17
+2021-10-13 13:40:24,523 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:40:24,526 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:40:24,537 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 17
+2021-10-13 13:40:27,361 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:40:27,364 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:40:27,374 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 17
+2021-10-13 13:43:10,594 DEBUG [http-nio-8006-exec-3] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_img, article_author, article_description, article_title, create_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2021-10-13 13:43:10,597 DEBUG [http-nio-8006-exec-3] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448162375696314370(String), https://cdn.yocoto.cn/FnFUiMqi9FA_cPH-NcYoRnljP9pK(String), 陌生人(String), 222(String), 222(String), 2021-10-13 13:43:10(String)
+2021-10-13 13:43:10,602 DEBUG [http-nio-8006-exec-3] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:43:11,492 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:43:11,494 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:43:11,509 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 18
+2021-10-13 13:43:52,051 DEBUG [http-nio-8006-exec-5] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:43:52,052 DEBUG [http-nio-8006-exec-5] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:43:52,065 DEBUG [http-nio-8006-exec-5] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 18
+2021-10-13 13:43:53,519 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:43:53,520 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:43:53,526 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 18
+2021-10-13 13:45:05,665 DEBUG [http-nio-8006-exec-8] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:45:05,667 DEBUG [http-nio-8006-exec-8] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:45:05,676 DEBUG [http-nio-8006-exec-8] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 18
+2021-10-13 13:45:26,217 DEBUG [http-nio-8006-exec-9] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_img, article_author, article_description, article_title, create_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2021-10-13 13:45:26,231 DEBUG [http-nio-8006-exec-9] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448162944603320322(String), https://cdn.yocoto.cn/FnFUiMqi9FA_cPH-NcYoRnljP9pK(String), 陌生人(String), 汇编语言是直接在硬件之上工作的编程语言，首先要了解硬件系统的结构，才能有效的应用汇编语言对其编程。
+
+比汇编语言更加低级的语言是机器语言，机器语言是机器指令的集合。(String), 汇编语言：(String), 2021-10-13 13:45:26(String)
+2021-10-13 13:45:26,236 DEBUG [http-nio-8006-exec-9] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:45:27,121 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:45:27,126 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:45:27,138 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 19
+2021-10-13 13:47:10,185 DEBUG [http-nio-8006-exec-2] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_img, article_author, article_description, article_title, create_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2021-10-13 13:47:10,189 DEBUG [http-nio-8006-exec-2] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448163380626386945(String), https://cdn.yocoto.cn/FnFUiMqi9FA_cPH-NcYoRnljP9pK(String), 陌生人(String), (String), (String), 2021-10-13 13:47:10(String)
+2021-10-13 13:47:10,194 DEBUG [http-nio-8006-exec-2] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:47:11,085 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:47:11,086 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:47:11,096 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 20
+2021-10-13 13:49:46,810 DEBUG [http-nio-8006-exec-5] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==>  Preparing: INSERT INTO article ( id, article_img, article_author, article_description, article_url, article_title, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? ) 
+2021-10-13 13:49:46,816 DEBUG [http-nio-8006-exec-5] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] ==> Parameters: 1448164037576028161(String), https://cdn.yocoto.cn/FnFUiMqi9FA_cPH-NcYoRnljP9pK(String), 陌生人(String), ### 指令和数据：
+
+指令和数据是应用上的概念。
+
+在内存或磁盘上，指令和数据没有任何区别，都是二进制信息。
+
+### 存储单元
+
+存储器被划分为若干个存储单元，每个存储单元从0开始顺序编号。(String), # 汇编语言：
+
+## 1. 认识（基础知识）：
+
+汇编语言是直接**在硬件之上**工作的编程语言，首先要了解硬件系统的结构，才能有效的应用汇编语言对其编程。
+
+比汇编语言更加低级的语言是**机器语言**，机器语言是机器指令的集合。
+
+机器指令就是一台机器可以正常执行的命令。
+
+> 汇PUSH AX 对用的机器指令：01010000
+>
+> 对应CPU工作时的电平脉冲。
+>
+> ![image-20210303160430070](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303160430070.png)
+
+* 机器语言：
+
+早期的程序猿们将 0、1数字编程的程序代码打在纸带或卡片上，1打孔，0不打孔，再将程序通过纸带或卡片机输入计算机，进行运算。 **打卡机**
+
+后来，慢慢的出现电子管、晶体管、现在CPU是用石英振动来表示1、0…… 表示的还是1和0没有变化，变的是速度。
+
+> 如果是这样来编程的话，想想看，那就完蛋了
+>
+> ![image-20210303161101830](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303161101830.png)
+
+> 在显示器上输出 “welcome to masm”
+> 机器码：
+> ![image-20210303161335887](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303161335887.png)
+>
+> 如果程序中有一个“1”被误写成“0”，如何查找呢？
+
+### 汇编指令是机器指令的助记符。
+
+汇编指令和机器指令的差别在于 表示上：
+
+> ![image-20210303162023978](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303162023978.png)
+
+### 什么是寄存器:
+
+寄存器是CPU可以存储数据的器件，一个CPU中有多个寄存器。
+
+<img src="C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303162155972.png" alt="image-20210303162155972" style="zoom:200%;" />
+
+
+
+计算机能读懂的只有机器指令，如何让机器读懂我们写的汇编程序呢？
+
+![image-20210303162407573](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303162407573.png)
+
+> C/C++语言程序则要先用编译器编译成汇编指令………
+
+### 汇编语言的组成：
+
+![image-20210303172958428](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303172958428.png)
+
+### 存储器：
+
+CPU是计算机的核心部件，他控制整个计算机的运作并进行运算，要想让你一个CPU工作，就必须向他提供指令和数据。
+
+指令和数据在存储器中存放，他就是所说的内存。
+
+在一台PC机中内存（RAM）的作用仅次于CPU。
+
+离开了内存，性能再好的CPU也无法工作。
+
+硬盘不同于内存，硬盘上的数据或程序如果不读到内存中，就无法被CPU使用。
+
+### 指令和数据：
+
+指令和数据是应用上的概念。
+
+在内存或磁盘上，指令和数据没有任何区别，都是二进制信息。
+
+### 存储单元
+
+存储器被划分为若干个存储单元，每个存储单元从0开始顺序编号。
+
+存储器不一定就是内存，还有显存。
+
+把数据存到显存中，**显卡**里面有一个GPU，会把显存中的数据读取出来映射到屏幕上。
+GPU的速度比CPU速度快多了。
+
+> GPU ：
+> 图形处理器，用来完成图形处理部分减少CPU的工作负担。
+
+![image-20210303191052757](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303191052757.png)
+
+### CPU对存储器的读写：
+
+![image-20210303192308887](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303192308887.png)
+
+![image-20210303210117973](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303210117973.png)
+
+![image-20210303210211375](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303210211375.png)![image-20210303211715375](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303211715375.png)
+
+> 从上面我们知道CPU是如何进行数据读写的。
+>
+> 可是我们如何命令计算机进行数据的读写呢？
+
+### 地址总线：
+
+CPU是通过地址总线来指定存储单元的。
+
+地址总线能传送多少个不同的信息，CPU就可以对多少个存储单元进行寻址。
+
+### 数据总线：
+
+![image-20210303213038204](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303213038204.png)
+
+![image-20210303213452358](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303213452358.png)
+
+![image-20210303213308991](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303213308991.png)
+
+> 数据总线的宽度决定了CPU的速度。
+
+### 控制总线：
+
+![image-20210303213554226](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303213554226.png)
+
+
+
+![image-20210303215403480](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303215403480.png)
+
+### 内存地址空间
+
+什么是内存地址空间：
+![image-20210303215753009](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303215753009.png)
+
+![image-20210303220246194](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303220246194.png)
+
+![image-20210303220317608](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303220317608.png)
+
+![image-20210303220447342](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303220447342.png)
+
+不同计算机系统的内存地址空间分配情况是不同的。
+
+![image-20210303220644350](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303220644350.png)
+
+## 2、CPU寄存器工作原理：
+
+一个典型的CPU由运算器、控制器、寄存器等器件组成，这些器件靠内部总线相连。
+
+![img](https://img-blog.csdn.net/20161202211006442?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+区别：
+
+内部总线实现CPU内部各个器件之间的联系。
+外部总线实现CPU和主板上其它器件的联系。
+
+8086CPU有14个寄存器 它们的名称为：
+AX、BX、CX、DX、SI、DI、SP、BP、
+IP、CS、SS、DS、ES、PSW。
+
+![img](https://img-blog.csdn.net/20161202211202958?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+AX、BX、CX、DX 通常用来存放一般性数据被称为通用寄存器。
+
+一个16位寄存器所能存储的数据的最大值为多少？ 
+因为每一位存放的数据是0或1，那么最大的数值自然就是 1111 1111 1111 1111（2），也就是2^16-1。
+
+### 通用寄存器（重点）：
+
+8086上一代CPU中的寄存器都是8位的，为保证兼容性，
+
+**这四个寄存器都可以分为两个独立的8位寄存器使用**
+AX可以分为AH和AL；
+BX可以分为BH和BL；
+CX可以分为CH和CL；
+DX可以分为DH和DL。
+
+### 几条汇编指令：
+
+![image-20210303222610982](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303222610982.png)
+
+![image-20210303222625554](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303222625554.png)
+
+![image-20210303222654624](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303222654624.png)
+
+## 4、写程序：
+
+![image-20210303224019913](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303224019913.png)
+
+![image-20210303223722407](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303223722407.png)
+
+![image-20210303223842637](https://gitee.com/MoLongCode/blogimage/raw/master/img/image-20210303223842637.png)
+
+![image-20210303223853345](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303223853345.png)
+
+![image-20210303224040427](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303224040427.png)
+
+> 伪指令
+> ![image-20210303224300305](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303224300305.png)
+
+定义一个段:
+![image-20210303224350355](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303224350355.png)
+
+![image-20210303224605426](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303224605426.png)
+
+![image-20210303224645323](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303224645323.png)
+
+### 寄存器与段的关联假设：
+
+![image-20210303224745223](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303224745223.png)
+
+### 源程序和程序（可执行文件）：
+
+### ![image-20210303225354434](C:\Users\逄晓龙\AppData\Roaming\Typora\typora-user-images\image-20210303225354434.png)                                (String), 汇编语言2(String), 2021-10-13 13:49:46(String)
+2021-10-13 13:49:46,821 DEBUG [http-nio-8006-exec-5] com.pxl.mapper.ArticleMapper.insert [BaseJdbcLogger.java : 143] <==    Updates: 1
+2021-10-13 13:49:47,990 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:49:47,993 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:49:48,003 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 13:51:25,194 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:51:25,198 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:51:25,207 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 13:51:40,477 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:51:40,478 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:51:40,486 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 13:51:52,835 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:51:52,837 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:51:52,847 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 13:54:44,315 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:54:44,316 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:54:44,324 DEBUG [http-nio-8006-exec-10] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 13:54:47,937 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:54:47,938 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:54:47,945 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 13:55:41,145 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:55:41,146 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:55:41,156 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 13:55:44,256 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:55:44,259 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:55:44,266 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 13:56:52,912 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 13:56:52,913 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 13:56:52,919 DEBUG [http-nio-8006-exec-6] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 14:02:09,331 DEBUG [http-nio-8006-exec-8] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 14:02:09,332 DEBUG [http-nio-8006-exec-8] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 14:02:09,336 DEBUG [http-nio-8006-exec-8] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 14:02:12,743 DEBUG [http-nio-8006-exec-9] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 14:02:12,747 DEBUG [http-nio-8006-exec-9] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 14:02:12,754 DEBUG [http-nio-8006-exec-9] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 14:06:40,428 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 14:06:40,434 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 14:06:40,445 DEBUG [http-nio-8006-exec-1] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 14:08:05,694 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 14:08:05,697 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 14:08:05,702 DEBUG [http-nio-8006-exec-3] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21
+2021-10-13 14:08:37,787 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==>  Preparing: SELECT id,article_img,article_author,article_description,article_url,article_title,create_time FROM article ORDER BY create_time DESC 
+2021-10-13 14:08:37,789 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] ==> Parameters: 
+2021-10-13 14:08:37,801 DEBUG [http-nio-8006-exec-4] c.p.mapper.ArticleMapper.selectList [BaseJdbcLogger.java : 143] <==      Total: 21

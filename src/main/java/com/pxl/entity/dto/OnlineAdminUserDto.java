@@ -1,4 +1,4 @@
-package com.pxl.entity.DTO;
+package com.pxl.entity.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

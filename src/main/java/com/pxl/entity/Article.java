@@ -1,6 +1,8 @@
 package com.pxl.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import java.io.Serializable;
@@ -15,6 +17,8 @@ public class Article implements Serializable {
     private String articleDescription;
     private String articleUrl;
     private String articleTitle;
+    private Integer articleCategoryId;
+    @TableField(fill = FieldFill.INSERT)
     private String createTime;
 
 }

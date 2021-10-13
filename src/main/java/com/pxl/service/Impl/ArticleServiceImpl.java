@@ -3,6 +3,7 @@ package com.pxl.service.Impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pxl.entity.Article;
+import com.pxl.entity.dto.ArticleQueryDto;
 import com.pxl.mapper.ArticleMapper;
 import com.pxl.service.ArticleService;
 import lombok.RequiredArgsConstructor;
@@ -19,10 +20,16 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper,Article> imple
     private final ArticleMapper articleMapper;
 
     @Override
-    public List<Article> findAll() {
-        // 默认根据创建时间降序
+    public List<Article> findAll(ArticleQueryDto articleQueryDto) {
         LambdaQueryWrapper<Article> wrapper = new LambdaQueryWrapper<>();
-        wrapper.orderByDesc(Article::getCreateTime);
+        wrapper.eq(Article::getArticleCategoryId,articleQueryDto.getArticleCategoryId());
+        // 默认根据创建时间降序
+        if(articleQueryDto.getQueryWrapper().equals(1)){
+            wrapper.orderByDesc(Article::getCreateTime);
+        }else if(articleQueryDto.getQueryWrapper().equals(2)){
+            // 根据喜欢数量降序
+            wrapper.orderByDesc(Article::getArticleLikeNums);
+        }
         return articleMapper.selectList(wrapper);
     }
 

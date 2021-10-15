@@ -5,4 +5,5 @@ import com.pxl.entity.Article;
 import com.pxl.entity.ArticleComment;
 
 public interface ArticleCommentService extends IService<ArticleComment> {
+    void readArticleComment(String articleId);
 }

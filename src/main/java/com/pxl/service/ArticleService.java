@@ -9,4 +9,7 @@ import java.util.List;
 public interface ArticleService extends IService<Article> {
 
     List<Article> findAll(ArticleQueryDto articleQueryDto);
+
+    void addLikeNums(String articleId);
+
 }

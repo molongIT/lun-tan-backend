@@ -1,9 +1,11 @@
 package com.pxl.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.pxl.entity.Article;
 import com.pxl.entity.ArticleComment;
+import com.pxl.entity.vo.ArticleCommentVo;
+
+import java.util.List;
 
 public interface ArticleCommentService extends IService<ArticleComment> {
-    void readArticleComment(String articleId);
+    List<ArticleCommentVo> readArticleComment(String articleId);
 }

@@ -6,6 +6,7 @@ import com.pxl.common.utils.UserInfoUtils;
 import com.pxl.entity.Article;
 import com.pxl.entity.dto.ArticleQueryDto;
 import com.pxl.entity.ArticleComment;
+import com.pxl.entity.vo.ArticleCommentVo;
 import com.pxl.service.ArticleCommentService;
 import com.pxl.service.ArticleService;
 import lombok.RequiredArgsConstructor;
@@ -21,7 +22,6 @@ public class ArticleController {
 
     private final ArticleService articleService;
     private final ArticleCommentService articleCommentService;
-
     /**
      * 获取文章列表，匿名可访问。
      */
@@ -40,6 +40,13 @@ public class ArticleController {
         article.setArticleAuthor(UserInfoUtils.getCurrentUsername());
         articleService.save(article);
         return ResultWrapper.success();
+    }
+
+    @AnonymousAccess
+    @GetMapping("/comment")
+    public ResultWrapper selectArticleComment(@RequestParam String articleId) {
+        List<ArticleCommentVo> articleCommentVos=articleCommentService.readArticleComment(articleId);
+        return ResultWrapper.success(articleCommentVos);
     }
 
     @PutMapping("/like/{articleId}")

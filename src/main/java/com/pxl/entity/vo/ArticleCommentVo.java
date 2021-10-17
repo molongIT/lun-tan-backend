@@ -8,12 +8,14 @@ import lombok.Setter;
 @AllArgsConstructor
 @Data
 public class ArticleCommentVo {
-    private Integer articleCommentId;
+    private Long articleCommentId;
 
     private String articleCommentText;
 
     private String username;
 
     private String userAvatar;
+
+    private String createTime;
 
 }

@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pxl.entity.Article;
+import com.pxl.entity.dto.ArticleHotDto;
 import com.pxl.entity.dto.ArticleQueryDto;
 import com.pxl.mapper.ArticleMapper;
 import com.pxl.service.ArticleService;
@@ -19,7 +20,6 @@ import java.util.List;
 public class ArticleServiceImpl extends ServiceImpl<ArticleMapper,Article> implements ArticleService {
 
     private final ArticleMapper articleMapper;
-
     @Override
     public List<Article> findAll(ArticleQueryDto articleQueryDto) {
         LambdaQueryWrapper<Article> wrapper = new LambdaQueryWrapper<>();
@@ -37,6 +37,10 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper,Article> imple
     @Override
     public void addLikeNums(String articleId) {
         articleMapper.addLikeNums(articleId);
+    }
+
+    public List<ArticleHotDto> findArticleHot(){
+        return articleMapper.findArticleHot();
     }
 
 }

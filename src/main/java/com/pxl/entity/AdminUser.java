@@ -3,6 +3,7 @@ package com.pxl.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.models.auth.In;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,7 +18,7 @@ import java.io.Serializable;
 public class AdminUser implements Serializable {
 
     @TableId(type = IdType.INPUT)
-    private String id;
+    private Integer id;
 
     private String username;
 

@@ -4,6 +4,7 @@ import com.pxl.common.ResultWrapper;
 import com.pxl.common.annotation.AnonymousAccess;
 import com.pxl.common.utils.UserInfoUtils;
 import com.pxl.entity.Article;
+import com.pxl.entity.dto.ArticleHotDto;
 import com.pxl.entity.dto.ArticleQueryDto;
 import com.pxl.entity.ArticleComment;
 import com.pxl.entity.vo.ArticleCommentVo;
@@ -47,6 +48,12 @@ public class ArticleController {
     public ResultWrapper selectArticleComment(@RequestParam String articleId) {
         List<ArticleCommentVo> articleCommentVos=articleCommentService.readArticleComment(articleId);
         return ResultWrapper.success(articleCommentVos);
+    }
+
+    @AnonymousAccess
+    public ResultWrapper selectArticleComment() {
+        List<ArticleHotDto> articleHotDtos=articleService.findArticleHot();
+        return ResultWrapper.success(articleHotDtos);
     }
 
     @PutMapping("/like/{articleId}")

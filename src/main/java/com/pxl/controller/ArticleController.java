@@ -51,6 +51,7 @@ public class ArticleController {
     }
 
     @AnonymousAccess
+    @GetMapping("/hotarticle")
     public ResultWrapper selectArticleComment() {
         List<ArticleHotDto> articleHotDtos=articleService.findArticleHot();
         return ResultWrapper.success(articleHotDtos);

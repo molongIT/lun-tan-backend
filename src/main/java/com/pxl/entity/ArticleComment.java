@@ -1,7 +1,9 @@
 package com.pxl.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,13 +13,14 @@ import lombok.Setter;
 @Setter
 public class ArticleComment {
 
-    private Integer articleCommentId;
+    @TableId(type = IdType.ASSIGN_ID)
+    private Long articleCommentId;
 
-    private Integer userId;
+    private Long userId;
 
-    private Integer articleId;
+    private Long articleId;
 
-    private String commentText;
+    private String articleCommentText;
 
     @TableField(fill = FieldFill.INSERT)
     private String createTime;

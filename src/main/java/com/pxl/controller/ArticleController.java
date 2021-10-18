@@ -69,6 +69,7 @@ public class ArticleController {
     @PostMapping("/comment")
     @PreAuthorize("hasAnyAuthority('root','admin')")
     public ResultWrapper comment(@RequestBody ArticleComment articleComment) {
+        System.out.println(articleComment);
         articleCommentService.save(articleComment);
         return ResultWrapper.success();
     }

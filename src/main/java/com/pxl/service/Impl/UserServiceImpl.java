@@ -1,6 +1,7 @@
 package com.pxl.service.Impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pxl.entity.AdminUser;
 import com.pxl.mapper.UserMapper;
 import com.pxl.service.UserService;
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl extends ServiceImpl<UserMapper,AdminUser> implements UserService {
 
     private final UserMapper userMapper;
 

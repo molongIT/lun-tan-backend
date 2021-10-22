@@ -2,9 +2,11 @@ package com.pxl.controller;
 import com.pxl.common.ResultWrapper;
 import com.pxl.common.security.Jwt.JwtTokenUtils;
 import com.pxl.common.security.OnlineUserService;
+import com.pxl.entity.AdminUser;
 import com.pxl.entity.dto.AdminUserDto;
 import com.pxl.entity.dto.JwtAdminUserDto;
 import com.pxl.entity.dto.OnlineAdminUserDto;
+import com.pxl.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -21,6 +23,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class AuthController {
 
+    private final UserService userService;
     private final JwtTokenUtils jwtTokenUtils;
     private final OnlineUserService onlineUserService;
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
@@ -58,5 +61,11 @@ public class AuthController {
         String token = request.getHeader("Authorization").replace("Bearer ","");
         onlineUserService.logout(token);
         return ResultWrapper.success(null);
+    }
+
+    @PostMapping("/register")
+    public ResultWrapper register(@RequestBody AdminUser adminUser){
+        userService.save(adminUser);
+        return ResultWrapper.success();
     }
 }

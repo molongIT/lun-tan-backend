@@ -14,7 +14,7 @@ import java.io.Serializable;
 public class Article implements Serializable {
 
     @TableId(type = IdType.ASSIGN_ID)
-    private Integer id;
+    private Long id;
     private String articleImg;
     private String articleAuthor;
     private String articleDescription;

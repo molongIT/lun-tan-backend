@@ -18,7 +18,7 @@ import java.io.Serializable;
 public class AdminUser implements Serializable {
 
     @TableId(type = IdType.INPUT)
-    private Integer id;
+    private Long id;
 
     private String username;
 

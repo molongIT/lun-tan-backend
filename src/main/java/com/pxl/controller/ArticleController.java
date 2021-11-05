@@ -62,10 +62,10 @@ public class ArticleController {
     }
 
     @AnonymousAccess
-    @GetMapping("/hotarticle")
+    @GetMapping("/hot")
     public ResultWrapper seletHotArticles() {
-        List<ArticleHotDto> articleHotDtos=articleService.findArticleHot();
-        return ResultWrapper.success(articleHotDtos);
+        List<ArticleVo> hotArticles =articleService.findArticleHot();
+        return ResultWrapper.success(hotArticles);
     }
 
     @PutMapping("/like/{articleId}")

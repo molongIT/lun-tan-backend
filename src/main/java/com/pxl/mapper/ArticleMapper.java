@@ -15,8 +15,12 @@ public interface ArticleMapper extends BaseMapper<Article> {
 
     @Update("update article set article_like_nums = article_like_nums + 1 where id = #{articleId}")
     void addLikeNums(String articleId);
-    @Select("select article_title,id,article_like_nums from article order by article_like_nums desc limit 15")
-    List<ArticleHotDto> findArticleHot();
+
+    @Select("select t1.*,t2.username,t2.avatar from article t1,admin_user t2 " +
+            "where t1.user_id = t2.id " +
+            "order by t1.article_like_nums desc " +
+            "limit 10")
+    List<ArticleVo> findArticleHot();
 
     @Select("select t1.*,t2.username,t2.avatar from article t1,admin_user t2 " +
             "where t1.user_id = t2.id and article_category_id = #{articleCategoryId} ${orderByStr}")

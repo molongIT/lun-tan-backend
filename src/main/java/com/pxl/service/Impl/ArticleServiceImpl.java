@@ -42,7 +42,7 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper,Article> imple
         articleMapper.addLikeNums(articleId);
     }
 
-    public List<ArticleHotDto> findArticleHot(){
+    public List<ArticleVo> findArticleHot(){
         return articleMapper.findArticleHot();
     }
 

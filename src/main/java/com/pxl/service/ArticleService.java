@@ -14,7 +14,7 @@ public interface ArticleService extends IService<Article> {
 
     void addLikeNums(String articleId);
 
-    List<ArticleHotDto> findArticleHot();
+    List<ArticleVo> findArticleHot();
 
     List<ArticleVo> findAllByKeywords(String keywords);
 

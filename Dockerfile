@@ -1,7 +1,17 @@
-FROM openjdk:8-jre
-MAINTAINER pxlong
-RUN apt-get update
-RUN apt-get install telnet
-ADD /target/love-share-web-0.0.1.jar lun-tan-backend.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "lun-tan-backend.jar"]
+# 使用官方 maven/Java 8 镜像作为构建环境
+# https://hub.docker.com/_/maven
+FROM maven:3.6-jdk-11 as builder
+# 将代码复制到容器内
+WORKDIR /app
+COPY pom.xml .
+COPY src ./src
+# 构建项目
+RUN mvn package -DskipTests
+# 使用 AdoptOpenJDK 作为基础镜像
+# https://hub.docker.com/r/adoptopenjdk/openjdk8
+# https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds
+FROM adoptopenjdk/openjdk11:alpine-slim
+# 将 jar 放入容器内
+COPY --from=builder /app/target/pxlong-*.jar /pxlong.jar
+# 启动服务
+CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/pxlong.jar"]

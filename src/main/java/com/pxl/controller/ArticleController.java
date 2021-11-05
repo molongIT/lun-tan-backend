@@ -63,7 +63,7 @@ public class ArticleController {
 
     @AnonymousAccess
     @GetMapping("/hot")
-    public ResultWrapper seletHotArticles() {
+    public ResultWrapper selectHotArticles() {
         List<ArticleVo> hotArticles =articleService.findArticleHot();
         return ResultWrapper.success(hotArticles);
     }

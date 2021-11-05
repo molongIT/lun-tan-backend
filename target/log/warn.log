@@ -1,0 +1,2 @@
+2021-11-05 21:07:20,116 WARN [main] com.pxl.common.Log.LogConfig [LogConfig.java : 17] 这是warn日志
+2021-11-05 21:07:22,891 WARN [main] com.pxl.Application [Application.java : 17] SpringBoot启动成功~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

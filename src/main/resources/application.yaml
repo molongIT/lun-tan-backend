@@ -34,9 +34,9 @@ spring:
           mergeSql: true
           slowSqlMillis: 5000
 redis:
-  host: 127.0.0.1
+  host: 1.117.140.237
   port: 6379
-  password:
+  password: pxlong@202190526
   pool:
     maxTotal: 10
     maxWait: 5

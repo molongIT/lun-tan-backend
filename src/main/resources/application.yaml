@@ -50,7 +50,7 @@ redis:
 #    password: guest
 
 server:
-  port: 8006
+  port: 8080
 
 
 

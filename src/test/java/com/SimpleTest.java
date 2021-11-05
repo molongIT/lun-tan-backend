@@ -1,6 +1,7 @@
 package com;
 
 import cn.hutool.core.date.DateUtil;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -89,7 +90,9 @@ public class SimpleTest {
     }
 
     public static void main(String[] args) {
-        System.out.println(DateUtil.date().toLocaleString());
+        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+
+        System.out.println(bCryptPasswordEncoder.encode("123456"));
     }
 
 }

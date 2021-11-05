@@ -8,7 +8,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Data
 public class ArticleCommentVo {
-    private Long articleCommentId;
+    private String articleCommentId;
 
     private String articleCommentText;
 

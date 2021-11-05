@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pxl.entity.Article;
 import com.pxl.entity.dto.ArticleHotDto;
 import com.pxl.entity.dto.ArticleQueryDto;
+import com.pxl.entity.vo.ArticleVo;
 import com.pxl.mapper.ArticleMapper;
 import com.pxl.service.ArticleService;
 import lombok.RequiredArgsConstructor;
@@ -21,17 +22,19 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper,Article> imple
 
     private final ArticleMapper articleMapper;
     @Override
-    public List<Article> findAll(ArticleQueryDto articleQueryDto) {
-        LambdaQueryWrapper<Article> wrapper = new LambdaQueryWrapper<>();
-        wrapper.eq(Article::getArticleCategoryId,articleQueryDto.getArticleCategoryId());
+    public List<ArticleVo> findAll(ArticleQueryDto articleQueryDto) {
+        List<ArticleVo> articleVos = null;
+        // 根据分类排序
         // 默认根据创建时间降序
         if(articleQueryDto.getQueryWrapper().equals(1)){
-            wrapper.orderByDesc(Article::getCreateTime);
+            String orderByStr = "order by create_time desc";
+            articleVos = articleMapper.selectByWrapper(articleQueryDto.getArticleCategoryId(),orderByStr);
         }else if(articleQueryDto.getQueryWrapper().equals(2)){
             // 根据喜欢数量降序
-            wrapper.orderByDesc(Article::getArticleLikeNums);
+            String orderByStr = "order by article_like_nums desc";
+            articleVos = articleMapper.selectByWrapper(articleQueryDto.getArticleCategoryId(),orderByStr);
         }
-        return articleMapper.selectList(wrapper);
+        return articleVos;
     }
 
     @Override
@@ -41,6 +44,11 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper,Article> imple
 
     public List<ArticleHotDto> findArticleHot(){
         return articleMapper.findArticleHot();
+    }
+
+    @Override
+    public List<ArticleVo> findAllByKeywords(String keywords) {
+        return articleMapper.findAllByKeywords(keywords);
     }
 
 }

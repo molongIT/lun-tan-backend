@@ -1,5 +1,6 @@
 package com.pxl.controller;
 import com.pxl.common.ResultWrapper;
+import com.pxl.common.annotation.AnonymousAccess;
 import com.pxl.common.security.Jwt.JwtTokenUtils;
 import com.pxl.common.security.OnlineUserService;
 import com.pxl.entity.AdminUser;
@@ -29,6 +30,7 @@ public class AuthController {
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
 
     @PostMapping
+    @AnonymousAccess
     public Map<String, Object> login(@RequestBody AdminUserDto user, HttpServletRequest request){
         // 生成一个UsernamePasswordAuthenticationToken
         UsernamePasswordAuthenticationToken authenticationToken =
@@ -51,7 +53,6 @@ public class AuthController {
                 put("userInfo", user1);
             }
         };
-        System.out.println("----------------" + authInfo);
         return authInfo;
     }
 
@@ -61,11 +62,5 @@ public class AuthController {
         String token = request.getHeader("Authorization").replace("Bearer ","");
         onlineUserService.logout(token);
         return ResultWrapper.success(null);
-    }
-
-    @PostMapping("/register")
-    public ResultWrapper register(@RequestBody AdminUser adminUser){
-        userService.save(adminUser);
-        return ResultWrapper.success();
     }
 }

@@ -17,8 +17,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class AdminUser implements Serializable {
 
-    @TableId(type = IdType.INPUT)
-    private Long id;
+    @TableId(type = IdType.ASSIGN_ID)
+    private String id;
 
     private String username;
 
@@ -28,7 +28,7 @@ public class AdminUser implements Serializable {
 
     private String gender;
 
-    private String avatarPath;
+    private String avatar;
 
     @JsonIgnore
     private String password;
@@ -45,7 +45,7 @@ public class AdminUser implements Serializable {
                 ", username='" + username + '\'' +
                 ", phone='" + phone + '\'' +
                 ", gender='" + gender + '\'' +
-                ", avatarPath='" + avatarPath + '\'' +
+                ", avatar='" + avatar + '\'' +
                 ", password='" + password + '\'' +
                 ", enabled=" + enabled +
                 ", isRoot=" + isRoot +

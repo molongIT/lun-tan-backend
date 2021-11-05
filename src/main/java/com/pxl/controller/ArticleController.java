@@ -1,5 +1,6 @@
 package com.pxl.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.pxl.common.ResultWrapper;
 import com.pxl.common.annotation.AnonymousAccess;
 import com.pxl.common.utils.UserInfoUtils;
@@ -8,6 +9,7 @@ import com.pxl.entity.dto.ArticleHotDto;
 import com.pxl.entity.dto.ArticleQueryDto;
 import com.pxl.entity.ArticleComment;
 import com.pxl.entity.vo.ArticleCommentVo;
+import com.pxl.entity.vo.ArticleVo;
 import com.pxl.service.ArticleCommentService;
 import com.pxl.service.ArticleService;
 import lombok.RequiredArgsConstructor;
@@ -29,16 +31,25 @@ public class ArticleController {
     @GetMapping
     //@PreAuthorize("hasAnyAuthority('root','admin')")
     @AnonymousAccess
-    public List<Article> getAll(@RequestParam Integer articleCategoryId, @RequestParam Integer queryWrapper) {
+    public List<ArticleVo> getAll(@RequestParam Integer articleCategoryId, @RequestParam Integer queryWrapper) {
         ArticleQueryDto articleQueryDto = new ArticleQueryDto(articleCategoryId, queryWrapper);
         System.out.println(articleQueryDto);
         return articleService.findAll(articleQueryDto);
     }
 
+
+    @GetMapping("/search")
+    //@PreAuthorize("hasAnyAuthority('root','admin')")
+    @AnonymousAccess
+    public List<ArticleVo> search(@RequestParam String keywords) {
+        return articleService.findAllByKeywords(keywords);
+    }
+
+
+
     @PostMapping
     @PreAuthorize("hasAnyAuthority('root','admin')")
     public ResultWrapper add(@RequestBody Article article) {
-        article.setArticleAuthor(UserInfoUtils.getCurrentUsername());
         articleService.save(article);
         return ResultWrapper.success();
     }
@@ -52,7 +63,7 @@ public class ArticleController {
 
     @AnonymousAccess
     @GetMapping("/hotarticle")
-    public ResultWrapper selectArticleComment() {
+    public ResultWrapper seletHotArticles() {
         List<ArticleHotDto> articleHotDtos=articleService.findArticleHot();
         return ResultWrapper.success(articleHotDtos);
     }

@@ -1,6 +1,5 @@
 package com.pxl.entity.dto;
 
-import com.sun.istack.internal.NotNull;
 import io.swagger.annotations.ApiModel;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,10 +9,8 @@ import lombok.Setter;
 @ApiModel("登录用户类")
 public class AdminUserDto {
 
-    @NotNull
     private String username;
 
-    @NotNull
     private String password;
 
     @Override

@@ -21,6 +21,7 @@ public class Article implements Serializable {
     private String articleTitle;
     private Integer articleCategoryId;
     private Integer articleLikeNums;
+    private Integer articleViewNums;
 
     @TableField(fill = FieldFill.INSERT)
     private String createTime;

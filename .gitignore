@@ -13,4 +13,3 @@
 ### 日志 ###
 /log/
 /target/
-!/target/*.jar

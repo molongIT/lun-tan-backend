@@ -86,12 +86,11 @@ public class ArticleController {
         articleCommentService.save(articleComment);
         return ResultWrapper.success();
     }
-    @PostMapping("/article/view/{articleId}")
+
+    @PostMapping("/view/{articleId}")
     @AnonymousAccess
-    @PreAuthorize("hasAnyAuthority('root','admin')")
-    public ResultWrapper ViewNums(@RequestParam Integer id){
-        Integer articleId=articleService.addViewNums(id);
-        System.out.println(articleId);
+    public ResultWrapper addViewNums(@PathVariable Long articleId){
+        articleService.addViewNums(articleId);
         return ResultWrapper.success();
     }
 }

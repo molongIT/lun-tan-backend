@@ -1,1 +1,16 @@
-/D:/
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.
+
+
+### VS Code ###
+.vscode/
+/.mvn/
+/.gradle/
+
+### 日志 ###
+/log/
+/target/
+!/target/*.jar

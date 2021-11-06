@@ -30,7 +30,8 @@ public interface ArticleMapper extends BaseMapper<Article> {
             "from article t1,admin_user t2 " +
             "where t1.user_id = t2.id and t1.article_title like '%${keywords}%' ")
     List<ArticleVo> findAllByKeywords(String keywords);
-    @Update("update article set article_view_nums =article_view_nums+1 where id=#{id}")
-    Integer addViewNums(Integer id);
+
+    @Update("update article set article_view_nums = article_view_nums + 1 where id = #{id}")
+    Integer addViewNums(Long id);
 
 }

@@ -52,6 +52,6 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper,Article> imple
     }
 
     @Override
-    public Integer addViewNums(Integer id){return articleMapper.addViewNums(id);}
+    public Integer addViewNums(Long id){return articleMapper.addViewNums(id);}
 
 }

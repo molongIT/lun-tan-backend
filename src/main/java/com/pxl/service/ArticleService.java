@@ -18,6 +18,6 @@ public interface ArticleService extends IService<Article> {
 
     List<ArticleVo> findAllByKeywords(String keywords);
 
-    Integer addViewNums(Integer id);
+    Integer addViewNums(Long id);
 
 }

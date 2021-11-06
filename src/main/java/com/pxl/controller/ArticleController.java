@@ -12,6 +12,7 @@ import com.pxl.entity.vo.ArticleCommentVo;
 import com.pxl.entity.vo.ArticleVo;
 import com.pxl.service.ArticleCommentService;
 import com.pxl.service.ArticleService;
+import io.swagger.models.auth.In;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -85,5 +86,12 @@ public class ArticleController {
         articleCommentService.save(articleComment);
         return ResultWrapper.success();
     }
-
+    @PostMapping("/article/view/{articleId}")
+    @AnonymousAccess
+    @PreAuthorize("hasAnyAuthority('root','admin')")
+    public ResultWrapper ViewNums(@RequestParam Integer id){
+        Integer articleId=articleService.addViewNums(id);
+        System.out.println(articleId);
+        return ResultWrapper.success();
+    }
 }

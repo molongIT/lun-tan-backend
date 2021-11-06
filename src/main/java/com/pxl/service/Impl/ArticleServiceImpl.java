@@ -51,4 +51,7 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper,Article> imple
         return articleMapper.findAllByKeywords(keywords);
     }
 
+    @Override
+    public Integer addViewNums(Integer id){return articleMapper.addViewNums(id);}
+
 }

@@ -1,8 +1,0 @@
-2021-11-06 15:56:35,750 WARN [main] com.pxl.common.Log.LogConfig [LogConfig.java : 17] 这是warn日志
-2021-11-06 15:56:37,794 WARN [main] com.pxl.Application [Application.java : 17] SpringBoot启动成功~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2021-11-06 16:05:08,741 WARN [main] com.pxl.common.Log.LogConfig [LogConfig.java : 17] 这是warn日志
-2021-11-06 16:05:10,883 WARN [main] com.pxl.Application [Application.java : 17] SpringBoot启动成功~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2021-11-06 16:08:19,194 WARN [main] com.pxl.common.Log.LogConfig [LogConfig.java : 17] 这是warn日志
-2021-11-06 16:08:21,310 WARN [main] com.pxl.Application [Application.java : 17] SpringBoot启动成功~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2021-11-06 16:09:19,973 WARN [main] com.pxl.common.Log.LogConfig [LogConfig.java : 17] 这是warn日志
-2021-11-06 16:09:21,928 WARN [main] com.pxl.Application [Application.java : 17] SpringBoot启动成功~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

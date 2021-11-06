@@ -17,12 +17,12 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {
         //属性名称，不是字段名称
-        this.setFieldValByName("createTime", DateUtil.date().toLocaleString(), metaObject);
+        this.setFieldValByName("createTime", DateUtil.format(new Date(),"yyyy-MM-dd HH:mm:ss"), metaObject);
     }
 
     //使用mp实现修改操作，这个方法会执行。
     @Override
     public void updateFill(MetaObject metaObject) {
-        this.setFieldValByName("updateTime", DateUtil.date().toLocaleString(), metaObject);
+        this.setFieldValByName("updateTime", DateUtil.format(new Date(),"yyyy-MM-dd HH:mm:ss"), metaObject);
     }
 }

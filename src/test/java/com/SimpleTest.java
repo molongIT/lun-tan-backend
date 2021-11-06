@@ -7,6 +7,7 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Date;
 
 /**
  * @Author: Yang JianQiu
@@ -90,9 +91,7 @@ public class SimpleTest {
     }
 
     public static void main(String[] args) {
-        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
-
-        System.out.println(bCryptPasswordEncoder.encode("123456"));
+        System.out.println( DateUtil.format(new Date(),"yyyy-MM-dd HH:mm:ss"));
     }
 
 }

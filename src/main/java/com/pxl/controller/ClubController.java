@@ -1,6 +1,7 @@
 package com.pxl.controller;
 
 import com.pxl.common.ResultWrapper;
+import com.pxl.common.annotation.AnonymousAccess;
 import com.pxl.entity.vo.ClubVo;
 import com.pxl.service.ClubActivityService;
 import com.pxl.service.ClubService;
@@ -21,6 +22,7 @@ public class ClubController {
     private final ClubActivityService clubActivityService;
 
     @GetMapping
+    @AnonymousAccess
     public ResultWrapper getAll(){
        return ResultWrapper.success(clubService.getAll());
     }

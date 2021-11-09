@@ -12,7 +12,12 @@ import java.util.List;
 
 @Repository
 public interface ClubActivityMapper extends BaseMapper<ClubActivity> {
+
     @Select("select club_activity.club_id,activity_name,activity_address,user_id,activity_content,create_time,activity_end_time,activity_start_time,username,phone,admin_user.id" +
             " from admin_user,club_activity where user_id=admin_user.id and club_id=#{id}")
     List<ActivityVo> selectAllActivity(String id);
+
+    @Select("select t1.id as activityId,t1.activity_name,t1.create_time as activityCreateTime from club_activity t1 where t1.club_id = #{clubId}")
+    List<ActivityForClubVo> getActivityForClubVoByClubId(String clubId);
+
 }

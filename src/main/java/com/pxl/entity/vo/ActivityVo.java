@@ -12,11 +12,11 @@ public class ActivityVo {
 
     private String activityName;
 
-    private String actibityAddress;
+    private String activityAddress;
 
     private String userId;
 
-    private String activivtyContent;
+    private String activityContent;
 
     private Date activityCreateTime;
 

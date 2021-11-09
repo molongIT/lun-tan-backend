@@ -29,7 +29,7 @@ public class ClubServiceImpl extends ServiceImpl<ClubMapper, Club> implements Cl
     public List<ClubVo> getAll() {
         List<ClubVo> clubVos = clubMapper.getAll();
         for(ClubVo clubVo : clubVos){
-            clubVo.setClubActivities(clubActivityMapper.selectAllActivity(clubVo.getId()));
+            clubVo.setClubActivities(clubActivityMapper.getActivityForClubVoByClubId(clubVo.getId()));
         }
         System.out.println(clubVos);
         return clubVos;

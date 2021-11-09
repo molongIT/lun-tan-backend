@@ -32,9 +32,9 @@ public class ClubController {
      * @return ActivityVo
      */
     @GetMapping("/activities")
-
-    public List<ActivityVo> getActivitiesByClubId(@RequestParam String clubId){
+    @AnonymousAccess
+    public ResultWrapper getActivitiesByClubId(@RequestParam String clubId){
         List<ActivityVo> activityVos=clubActivityService.getAllActivity(clubId);
-        return activityVos;
+        return ResultWrapper.success(activityVos);
     }
 }

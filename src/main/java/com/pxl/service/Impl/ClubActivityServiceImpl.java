@@ -3,6 +3,7 @@ package com.pxl.service.Impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pxl.entity.ClubActivity;
 import com.pxl.entity.vo.ActivityForClubVo;
+import com.pxl.entity.vo.ActivityVo;
 import com.pxl.entity.vo.ClubVo;
 import com.pxl.mapper.ClubActivityMapper;
 import com.pxl.service.ClubActivityService;
@@ -16,8 +17,8 @@ import java.util.List;
 public class ClubActivityServiceImpl extends ServiceImpl<ClubActivityMapper, ClubActivity> implements ClubActivityService {
 
     private final ClubActivityMapper clubActivityMapper;
-    public List<ActivityForClubVo> getAllActivity(String id){
-        List<ActivityForClubVo> clubActivities=clubActivityMapper.selectAllActivity(id);
+    public List<ActivityVo> getAllActivity(String id){
+        List<ActivityVo> clubActivities=clubActivityMapper.selectAllActivity(id);
         return clubActivities;
     }
 }

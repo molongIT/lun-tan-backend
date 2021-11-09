@@ -11,15 +11,16 @@ import java.sql.Date;
 @AllArgsConstructor
 public class Club {
 
-    String clubName;
+    private String clubId;
 
-    String clubId;
+    private String clubName;
 
-    String clubLogo;
+    private String clubLogo;
 
-    String userId;
+    private String userId;
 
-    String clubDescription;
+    private String clubDescription;
 
-    Date createTime;
+    private Date createTime;
+
 }

@@ -2,14 +2,13 @@ package com.pxl.controller;
 
 import com.pxl.common.ResultWrapper;
 import com.pxl.common.annotation.AnonymousAccess;
+import com.pxl.entity.ClubActivity;
+import com.pxl.entity.vo.ActivityForClubVo;
 import com.pxl.entity.vo.ClubVo;
 import com.pxl.service.ClubActivityService;
 import com.pxl.service.ClubService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,7 +25,6 @@ public class ClubController {
     public ResultWrapper getAll(){
        return ResultWrapper.success(clubService.getAll());
     }
-
     /**
      * 根据cludId，获取所有活动
      * @param clubId
@@ -35,5 +33,11 @@ public class ClubController {
     @GetMapping("/activities")
     public ResultWrapper getActivitiesByClubId(@RequestParam String clubId){
         return null;
+    }
+    @PostMapping("/activities/#{clubId}")
+    @AnonymousAccess
+    public List<ActivityForClubVo> getAllActivity(@RequestParam String clubId){
+        List<ActivityForClubVo> activityForClubVos=clubActivityService.getAllActivity(clubId);
+        return activityForClubVos;
     }
 }

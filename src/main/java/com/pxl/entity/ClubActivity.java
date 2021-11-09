@@ -11,22 +11,24 @@ import java.util.Date;
 @AllArgsConstructor
 public class ClubActivity {
 
-    private String id;
+    String clubId;
 
-    private String clubId;
+    String activityName;
 
-    private String activityName;
+    String actibityAddress;
 
-    private String activityAddress;
+    String userId;
 
-    private String userId;
+    String activivtyContent;
 
-    private String activityContent;
+    Date createTime;
 
-    private Date createTime;
+    Date activityEndTime;
 
-    private Date activityEndTime;
+    Date activityStartTime;
 
-    private Date activityStartTime;
+    String username;
+
+    String phone;
 
 }

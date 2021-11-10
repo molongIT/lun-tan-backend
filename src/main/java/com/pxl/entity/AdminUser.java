@@ -35,8 +35,6 @@ public class AdminUser implements Serializable {
 
     private Boolean enabled;
 
-    private String userContract;
-
     @JsonIgnore
     private Boolean isRoot;
 

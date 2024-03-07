@@ -5,8 +5,8 @@ spring:
 
   datasource:
     username: root
-    password: Mysql1234#
-    url: jdbc:mysql://1.117.140.237:3306/luntan?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/luntan?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource #使用Druid数据库连接池
     #druid配置
@@ -34,9 +34,9 @@ spring:
           mergeSql: true
           slowSqlMillis: 5000
 redis:
-  host: 1.117.140.237
+  host: 127.0.0.1
   port: 6379
-  password: pxlong@202190526
+  password:
   pool:
     maxTotal: 10
     maxWait: 5

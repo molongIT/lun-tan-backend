@@ -91,7 +91,10 @@ public class SimpleTest {
     }
 
     public static void main(String[] args) {
-        System.out.println( DateUtil.format(new Date(),"yyyy-MM-dd HH:mm:ss"));
+        int x = 3;
+        System.out.println(Integer.toBinaryString(x));
+        System.out.println(Integer.toBinaryString(-x));
+        System.out.println(Integer.toBinaryString(x+(-x)));
     }
 
 }

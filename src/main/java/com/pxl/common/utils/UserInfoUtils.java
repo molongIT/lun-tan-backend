@@ -12,4 +12,12 @@ public class UserInfoUtils {
         }
         return authentication.getName();
     }
+
+   /* public static String getCurrentUserId) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if(authentication == null){
+            throw new RuntimeException("当前登录状态过期");
+        }
+        return authentication.getDetails();
+    }*/
 }

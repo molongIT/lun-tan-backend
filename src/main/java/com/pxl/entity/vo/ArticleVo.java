@@ -8,7 +8,7 @@ import lombok.Data;
 
 
 @Data
-public class ArticleVo {
+public class ArticleVo implements Comparable{
 
     @TableId(type = IdType.ASSIGN_ID)
     private String id;
@@ -23,4 +23,15 @@ public class ArticleVo {
     private Integer articleViewNums;
     @TableField(fill = FieldFill.INSERT)
     private String createTime;
+    // 标签数组
+    private String[] categoryNameArr;
+
+
+    private Integer recommendValue;
+
+    @Override
+    public int compareTo(Object o) {
+        ArticleVo o1 = (ArticleVo) o;
+        return o1.getRecommendValue()-this.recommendValue;
+    }
 }

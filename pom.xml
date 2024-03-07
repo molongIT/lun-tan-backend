@@ -205,8 +205,20 @@
             <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.walter</groupId>
+            <artifactId>baidu-model-sdk</artifactId>
+            <version>{{lastest}}</version>
+        </dependency>
+
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>baidu-model-sdk</id>
+            <url>https://gitee.com/gitwcx/baidu-model-java-sdk/raw/master/baidu-model-sdk/release/</url>
+        </repository>
+    </repositories>
 
     <build>
     <plugins>

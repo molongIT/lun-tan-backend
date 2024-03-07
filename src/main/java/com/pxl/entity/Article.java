@@ -7,14 +7,16 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.models.auth.In;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
 
 @Data
-@Builder
+@NoArgsConstructor
 public class Article implements Serializable {
 
-    @TableId(type = IdType.ASSIGN_ID)
-    private String id;
+    @TableId(type = IdType.INPUT)
+    private Long id;
     private String userId;
     private String articleDescription;
     private String articleUrl;

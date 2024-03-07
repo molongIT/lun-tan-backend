@@ -17,7 +17,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class AdminUser implements Serializable {
 
-    @TableId(type = IdType.ASSIGN_ID)
+    @TableId(type = IdType.INPUT)
     private String id;
 
     private String username;

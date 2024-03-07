@@ -17,4 +17,11 @@ public interface ArticleCommentMapper extends BaseMapper<ArticleComment> {
             "where article_comment.user_id=admin_user.id and article_id=#{articleId} " +
             "order by create_time desc")
     List<ArticleCommentVo> readArticleComment(@Param("articleId") String articleId);
+
+
+    @Select("select t1.perference\n" +
+            "from user_category_rel t1\n" +
+            "where t1.user_id = #{id} ORDER BY t1.category_id")
+    Integer[] selectPerferencesByUserId(String id);
+
 }

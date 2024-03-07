@@ -18,6 +18,7 @@ import java.util.List;
 @RequestMapping("/club")
 public class ClubController {
 
+
     private final ClubService clubService;
     private final ClubActivityService clubActivityService;
 

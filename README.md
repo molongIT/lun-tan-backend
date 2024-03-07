@@ -1,37 +1,6 @@
-# LunTan
-
-#### 介绍
-论坛网站
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+# 项目特点
+1. 采用前后端分离的方式，前端使用Vue框架和Element-UI组件库、后端使用主流的 Java Web 开发框架SpringBoot框架，持久层采用MybatisPlus框架，快速搭建一个高性能的前后端服务。
+2. 使用Mysql数据库来存储数据，利用主从数据库来实现读写分离,从而分担主数据库的压力。搭配Redis缓存用户信息、热点等信息。对接腾讯云的cos对象存储服务，用来存储网站的内容数据，搭建一个高可用的数据存储系统。
+3. 前端部署采用静态网站托管服务，后端SpringBoot项目采用云托管服务运行，使用Gitee Go服务持续集成部署，同时购置腾讯云服务器，搭建Mysql、Redis存储服务，实现低成本、高可靠、项目敏捷开发部署目标。
+4. 利用Python进行网络爬虫，结合ML对爬取数据进行过滤、分类，整合到存储服务中。搭建一个实时处理系统，能够支撑海量数据的处理。
+5. 研究探索机器学习自然语言中文本分析相关算法实现，并整合到项目中，提供文本自分类、文本摘要、关键短语抽取功能。
